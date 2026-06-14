@@ -25,10 +25,37 @@ a {
 .site {
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+  background: #020b1f;
+}
+
+.site::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
   background:
-    radial-gradient(circle at top left, rgba(49, 218, 194, 0.18), transparent 35%),
-    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.18), transparent 30%),
-    #020b1f;
+    linear-gradient(
+      110deg,
+      rgba(2, 11, 31, 0.66) 0%,
+      rgba(2, 11, 31, 0.38) 45%,
+      rgba(2, 11, 31, 0.78) 100%
+    ),
+    var(--building-bg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1.12) contrast(1.05) saturate(0.95);
+}
+
+.nav,
+.whatsapp-button,
+.hero,
+.section,
+.before-after-section,
+.footer {
+  position: relative;
+  z-index: 1;
 }
 
 /* HEADER */
@@ -136,15 +163,10 @@ a {
   background:
     linear-gradient(
       110deg,
-      rgba(2, 11, 31, 0.72) 0%,
-      rgba(2, 11, 31, 0.42) 45%,
-      rgba(2, 11, 31, 0.72) 100%
-    ),
-    var(--building-bg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  filter: brightness(1.08) contrast(1.04) saturate(0.95);
+      rgba(2, 11, 31, 0.38) 0%,
+      rgba(2, 11, 31, 0.16) 45%,
+      rgba(2, 11, 31, 0.46) 100%
+    );
 }
 
 .hero-overlay {
@@ -247,14 +269,10 @@ h1 {
   background:
     linear-gradient(
       135deg,
-      rgba(2, 11, 31, 0.86) 0%,
-      rgba(3, 16, 39, 0.74) 48%,
-      rgba(2, 11, 31, 0.88) 100%
-    ),
-    var(--building-bg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+      rgba(2, 11, 31, 0.82) 0%,
+      rgba(3, 16, 39, 0.68) 48%,
+      rgba(2, 11, 31, 0.86) 100%
+    );
 }
 
 .section-grid {
@@ -849,14 +867,6 @@ h1 {
     padding: 115px 20px 70px;
   }
 
-  .hero-bg,
-  .problem,
-  .solution,
-  .clients,
-  .process,
-  .trust {
-    background-attachment: scroll;
-  }
 
   .hero-actions {
     flex-direction: column;
