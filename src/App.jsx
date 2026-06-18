@@ -190,21 +190,40 @@ ${message}
         <FaWhatsapp />
       </a>
 
-      <header className="navbar">
-        <a href="#inicio" className="nav-logo" aria-label="NOVUS Glass">
-          <img src={novusLogo} alt="NOVUS Glass" />
-        </a>
+<header className="site-header">
+  <div className="top-bar">
+    <div className="top-bar-inner">
+      <a href={`tel:+${whatsappNumber}`}>
+        Llame a sus expertos en restauración de vidrios al +56 9 9436 5061
+      </a>
 
-      <nav className="nav-menu" aria-label="Navegación principal">
-  <a href="#empresa">Empresa</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#constructoras">Constructoras</a>
-  <a href="#residencial">Residencial</a>
-  <a href="#contacto" className="nav-contact">
-    Contacto
-  </a>
-</nav>
-      </header>
+      <span className="top-country">
+  <span className="chile-flag" aria-hidden="true">
+    <span className="flag-blue">★</span>
+    <span className="flag-white"></span>
+    <span className="flag-red"></span>
+  </span>
+  Chile
+</span>
+    </div>
+  </div>
+
+  <div className="navbar">
+    <a href="#inicio" className="nav-logo" aria-label="NOVUS Glass">
+      <img src={novusLogo} alt="NOVUS Glass" />
+    </a>
+
+    <nav className="nav-menu" aria-label="Navegación principal">
+      <a href="#empresa">Empresa</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#constructoras">Constructoras</a>
+      <a href="#residencial">Residencial</a>
+      <a href="#contacto" className="nav-contact">
+        Contacto
+      </a>
+    </nav>
+  </div>
+</header>
 
       <section id="inicio" className="hero">
         <div className="hero-content">
@@ -273,16 +292,16 @@ para reducir costos, tiempos de reemplazo e impacto ambiental.
           <div>
             <span className="section-kicker">Nuestra empresa</span>
             <h2>
-              Especialistas en restauración técnica de ventanas y superficies de
-              vidrio
+              Especialistas en restauración de ventanas y superficies de
+vidrio
             </h2>
           </div>
 
           <div className="text-block">
             <p>
               Con más de 20 años de experiencia en el rubro, nos hemos
-              consolidado como especialistas en la restauración técnica de
-              ventanas y superficies de vidrio.
+              consolidado como especialistas en la restauración de
+ventanas y superficies de vidrio.
             </p>
 
             <p>
@@ -313,12 +332,12 @@ para reducir costos, tiempos de reemplazo e impacto ambiental.
           <div className="mission-card">
             <span className="section-kicker">Misión NOVUS Glass</span>
             <h2>
-              Reducir costos y tiempos mediante restauración avanzada de vidrios
+              Reducir costos y tiempos mediante la restauración de vidrios
             </h2>
 
             <p>
               Nuestra misión es reducir costos y tiempos mediante la
-              restauración avanzada de ventanas y superficies de vidrio,
+              restauración de ventanas y superficies de vidrio,
               ofreciendo una alternativa innovadora y sostenible al reemplazo de
               materiales.
             </p>
