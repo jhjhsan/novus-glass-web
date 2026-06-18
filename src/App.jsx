@@ -48,8 +48,8 @@ const services = [
 const whyItems = [
   {
     icon: <ShieldCheck />,
-    title: "Sistema técnico, no pulido convencional",
-    text: "Aplicamos un sistema de recuperación técnica diseñado para cristales de alto valor, con procesos controlados y resultados de alta precisión.",
+    title: "Sistema especializado, no pulido convencional",
+    text: "Aplicamos un sistema de recuperación especializado para cristales de alto valor, con procesos controlados y resultados de alta precisión.",
   },
   {
     icon: <Factory />,
@@ -195,13 +195,15 @@ ${message}
           <img src={novusLogo} alt="NOVUS Glass" />
         </a>
 
-        <nav className="nav-menu" aria-label="Navegación principal">
-          <a href="#empresa">Empresa</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#constructoras">Constructoras</a>
-          <a href="#residencial">Residencial</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+      <nav className="nav-menu" aria-label="Navegación principal">
+  <a href="#empresa">Empresa</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#constructoras">Constructoras</a>
+  <a href="#residencial">Residencial</a>
+  <a href="#contacto" className="nav-contact">
+    Contacto
+  </a>
+</nav>
       </header>
 
       <section id="inicio" className="hero">
@@ -210,21 +212,27 @@ ${message}
 
           <p className="hero-brand">NOVUS Glass</p>
 
-          <h1>Líderes en restauración de superficies de vidrio</h1>
+          <h1>Expertos en restauración de superficies de vidrio</h1>
 
-          <div className="hero-copy">
-            <p>
-              En NOVUS Glass combinamos décadas de experiencia con equipos de
-              última generación para resolver los desafíos más exigentes en
-              vidrios y cristales.
-            </p>
+        <div className="hero-copy">
+  <p>
+    Servicio de restauración de vidrios en el mismo sitio. Eliminamos
+    rayas, manchas de sarro y grafitis de forma rápida, económica y
+    sostenible.
+  </p>
 
-            <p>
-              Nuestro servicio no es un pulido convencional: es un sistema de
-              recuperación técnica que garantiza resultados impecables en
-              cristales de alto valor.
-            </p>
-          </div>
+  <p>
+    En NOVUS Glass combinamos décadas de experiencia con equipos de
+    última generación para resolver los desafíos más exigentes en
+    vidrios y cristales.
+  </p>
+
+  <p>
+    Nuestro servicio no es un pulido convencional: es un sistema de
+    recuperación que garantiza resultados impecables en cristales de
+    alto valor.
+  </p>
+</div>
 
           <div className="hero-actions">
             <a href="#contacto" className="btn btn-primary">
@@ -251,10 +259,10 @@ ${message}
         <div className="hero-visual">
           <div className="hero-image" />
           <div className="hero-card">
-            <strong>Restauración técnica avanzada</strong>
+            <strong>Restauración avanzada</strong>
             <p>
               Sistema de recuperación para cristales de alto valor, diseñado
-              para reducir costos, tiempos de reemplazo e impacto ambiental.
+para reducir costos, tiempos de reemplazo e impacto ambiental.
             </p>
           </div>
         </div>
@@ -340,7 +348,7 @@ ${message}
         <div className="section-inner">
           <div className="section-head">
             <span className="section-kicker">Por qué elegir NOVUS Glass</span>
-            <h2>Una solución técnica para recuperar, no reemplazar</h2>
+            <h2>Una solución especializada para recuperar, no reemplazar</h2>
             <p>
               Nuestro enfoque permite resolver daños complejos en vidrios y
               cristales, reduciendo costos, tiempos de operación y el impacto
@@ -674,7 +682,7 @@ ${message}
           <div className="footer-brand">
             <img src={novusLogo} alt="NOVUS Glass" />
             <p>
-              Líderes en restauración de superficies de vidrio. Soluciones
+             Expertos en restauración de superficies de vidrio. Soluciones
               técnicas para clientes residenciales, constructoras, inmobiliarias,
               comunidades y espacios comerciales.
             </p>
